@@ -33,7 +33,7 @@ With this extension, you can:
 
 ## How to Use  
 
-1. Visit the [maang.in](https://maang.in) website.  
+1. Visit the [Algozenith](https://maang.in) website.  
 2. Use the AZ Problem Tracker extension to bookmark problems.  
 3. Access your saved bookmarks from the extension popup.
 
