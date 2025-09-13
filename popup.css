@@ -1,33 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 .container {
     width: 280px;
     color: #314d3e;
+    border: 2px solid black;    
 }
 
 .title {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     padding: 8px;
 }
 
 .bookmarks {
     margin: 5px 5px;
     padding: 3px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .bookmark {
     display: flex;
-    border-bottom-color: #00254d;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-radius: 0.8rem;
-    padding: 3px;
-    padding-bottom: 7px;
-    margin-bottom: 7px;
+    border: 1px solid #00254d;
+    border-radius: 0.5rem;
+    padding: 5px;
+    margin: 3px 5px;
+    transition: 0.7s ease;
+}
+
+.bookmark:hover {
+    transform: scale(1.05);
+    border: 2px solid black;
 }
 
 .bookmark-title {
     padding-left: 2px;
     width: 180px;
+    font-weight: 500; 
+}
+
+.bookmark-title:hover {
+    font-weight: 700;
 }
 
 .bookmark-controls img {

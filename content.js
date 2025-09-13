@@ -23,13 +23,20 @@ function addBookmarkButton() {
     bookmarkButton.style.height = "30px";
     bookmarkButton.style.width = "30px";
 
-    const askDoubtButton = document.getElementsByClassName("coding_problem_info_heading__G9ueL fw-bolder rubik fs-4 mb-0")[0];
+    const askDoubtButton = document.getElementsByClassName("coding_problem_info_heading__G9ueL")[0];
 
     bookmarkButton.style.display = "inline"; 
     askDoubtButton.parentNode.insertAdjacentElement("afterend", bookmarkButton);
 
     bookmarkButton.addEventListener("click", addNewBookmarkHandler);
-    bookmarkButton.addEventListener("mouseover", () => bookmarkButton.style.cursor = "pointer")
+    bookmarkButton.addEventListener("mouseover", () => {
+         bookmarkButton.style.cursor = "pointer";
+         bookmarkButton.style.scale = 1.2;
+    })
+    bookmarkButton.addEventListener("mouseout", () => bookmarkButton.style.scale = 1);
+    // bookmarkButton.style.transitionTimingFunction = "ease-in";
+    // bookmarkButton.style.transitionDuration = 5;
+
 }
 
 async function addNewBookmarkHandler() {
